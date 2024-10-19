@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Font Awesome Link -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            background-color: #f8e006;
+        }
+        .profile-header {
+            background-color: #007bff;
+            color: white;
+            padding: 20px;
+            border-radius: 10px 10px 0 0;
+            text-align: center;
+        }
+        .profile-section {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .profile-img {
+            border-radius: 50%;
+            width: 150px;
+        }
+        .details {
+            padding-top: 20px;
+        }
+        .edit-btn {
+            margin-top: 10px;
+            background-color: #007bff;
+        }
+        .blog-history, .saved-posts {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+        .share-buttons a {
+            margin-right: 10px;
+        }
+        .save-btn {
+            background-color: #28a745;
+            color: white;
+        }
+        .bookmark-badge {
+            background-color: #55ff07;
+            color: white;
+        }
+        .navbar-custom {
+            background-color: #343a40;
+            padding: 15px;
+        }
+        .navbar-custom .navbar-brand, .navbar-custom .nav-link {
+            color: white;
+        }
+        .blog-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .blog-item .share-buttons {
+            flex: 1;
+        }
+        .badge {
+            margin-left: 10px;
+            margin-top: 10px;
+            background-color: #0084ff;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-custom">
+        <a class="navbar-brand" href="#">MyBlog</a>
+        <ul class="navbar-nav ml-auto">
+            
+        </ul>
+    </nav>
+
+    <!-- Profile Section -->
+    <div class="container mt-5">
+        <div class="row profile-section">
+            <!-- Left (More Details + Edit Profile) -->
+            <div class="col-md-8 details">
+                <h2 style="padding-bottom: 10px;">Shabnam</h2>
+                <p><strong>Occupation:</strong> Web Developer</p>
+                <p><strong>Location:</strong> Tamil Nadu,Madurai</p>
+                <p><strong>Bio:</strong> Passionate about web development, always eager to learn new technologies.</p>
+                <!-- More details added -->
+                <p><strong>Skills:</strong> HTML, CSS, JavaScript, React, Node.js</p>
+                <p><strong>Education:</strong> B.E in Computer Science Engineering from TCE</p>
+                <p><strong>Hobbies:</strong> Blogging, Reading, Singing</p>
+                <button class="btn btn-secondary edit-btn">Edit Profile</button>
+            </div>
+
+            <!-- Right (Profile Picture, Name & Short Description) -->
+            <div class="col-md-4 text-center" style="padding-top: 80px;">
+                <img src="Profile.jpg" alt="Profile Picture" class="profile-img img-fluid" style="height: 100px;width: auto;">
+                <h5>Shabnam</h5>
+                <p class="text-muted">Web Developer | Tech Enthusiast</p>
+            </div>
+        </div>
+
+      
+
+<!-- Blog Section -->
+<div class="row mt-4">
+    <div class="col-md-12">
+        <div class="blog-history">
+            <h3>Blogs Written</h3>
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <a href="#">How to Build a Blog Website</a>
+                        <span class="badge badge-secondary ml-2">June 2024</span>
+                    </div>
+                    <div class="share-buttons mt-2">
+                        <a href="#" class="btn btn-sm btn-primary"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="btn btn-sm btn-info"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="btn btn-sm btn-secondary"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <a href="#">Understanding Bootstrap Grid System</a>
+                        <span class="badge badge-secondary ml-2">May 2024</span>
+                    </div>
+                    <div class="share-buttons mt-2">
+                        <a href="#" class="btn btn-sm btn-primary"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="btn btn-sm btn-info"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="btn btn-sm btn-secondary"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+
+
+        <!-- Bookmarks and Saved Section -->
+        <div id="bookmarks" class="row mt-4">
+            <div class="col-md-12">
+                <div class="saved-posts">
+                    <h3>Bookmarked & Saved Posts</h3>
+                    <ul class="list-group">
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            <a href="#">How to Build a Blog Website</a>
+                            <span class="badge bookmark-badge">Saved on July 2024</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            <a href="#">Understanding Bootstrap Grid System</a>
+                            <span class="badge bookmark-badge" >Saved on June 2024</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+</body>
+</html>
