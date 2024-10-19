@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Discussions</title>
+    <link rel="stylesheet" href="../css/discussions.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Discussion Forum</h2>
+        <form id="discussionForm">
+            <div class="form-group">
+                <label for="discussionTitle">Title:</label>
+                <input type="text" class="form-control" id="discussionTitle" required>
+            </div>
+            <div class="form-group">
+                <label for="discussionContent">Content:</label>
+                <textarea class="form-control" id="discussionContent" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Post Discussion</button>
+        </form>
+
+        <div id="discussionsList" class="mt-3"></div>
+    </div>
+    <script src="../js/discussions.js"></script>
+</body>
+</html>

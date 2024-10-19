@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Polls and Quizzes</title>
+    <link rel="stylesheet" href="../css/polls-quiz.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Polls & Quizzes</h2>
+        <div id="pollsList"></div>
+        <form id="pollForm">
+            <div class="form-group">
+                <label for="pollQuestion">Question:</label>
+                <input type="text" class="form-control" id="pollQuestion" required>
+            </div>
+            <div class="form-group">
+                <label for="pollOptions">Options (comma separated):</label>
+                <input type="text" class="form-control" id="pollOptions" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Create Poll</button>
+        </form>
+    </div>
+    <script src="../js/polls-quiz.js"></script>
+</body>
+</html>
