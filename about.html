@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="Home.css"> <!-- Link to your CSS file -->
+    <style>
+           .navbar {
+            background-color: rgb(5, 5, 5); /* Set background color to white */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+        }
+        .navbar .navbar-brand {
+            color: rgb(154, 148, 148); /* Color for "My Blog" */
+            font-weight: bold; /* Make the brand text bold */
+        }
+        .navbar .navbar-nav .nav-link {
+            color: rgb(154,148,148); /* Set nav link color to dark */
+            text-decoration: none; /* Remove underline from links */
+        }
+        .navbar .navbar-nav .nav-link:hover {
+             /* Change color on hover */
+        }
+        body {
+            background-image: url(images/overlay.png), url(images/header.svg), linear-gradient(75deg, #FF7088 15%, #F2B69D 55%);
+            background-color: #f08c89;
+        }
+        body {
+            background-color: #f8f9fa; /* Light background for the page */
+        }
+        .about-section {
+            padding: 60px 0;
+        }
+        .about-section h2 {
+            color: #ff7088; /* Title color */
+            margin-bottom: 30px;
+        }
+        .team-member {
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        .team-member img {
+            border-radius: 50%;
+            width: 150px; /* Adjust as needed */
+            height: 150px; /* Adjust as needed */
+        }
+        .contact-info {
+            margin-top: 40px;
+            padding: 20px;
+            background-color: #fff; /* White background for contact info */
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+
+    <nav style="background-color: black;" class="navbar navbar-expand-lg">
+        <div class="container">
+            <a style="color:rgb(242, 235, 235);" class="navbar-brand" href="#!">My Blog</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto"> <!-- Use ml-auto to align nav items to the right -->
+                    <li class="nav-item">
+                        <a  class="nav-link" href="Home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a style="color:rgb(248, 243, 243);" class="nav-link" href="about.html">About</a>
+                    </li>
+                   
+                    <li class="nav-item">
+                        <a  class="nav-link" href="UserProfile.html">Profile</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Blog</a>
+                    </li>
+                </ul>
+                <button id="themeToggle" class="btn btn-outline-light ml-3">Light/Dark mode</button>
+            </div>
+        </div>
+    </nav>
+<div class="about-section text-center">
+    <div class="container">
+        <h1 style="color:black;">About Us</h1>
+        <p>Welcome to My Blog! We are dedicated to sharing insightful articles, stories, and information that inspire and inform our readers.</p>
+        
+        <h2 style="color:black;">Our Mission</h2>
+        <p>To create a platform where knowledge and creativity thrive, connecting readers with ideas that matter.</p>
+        
+        <h2 style="color:black;">Our Values</h2>
+        <ul class="list-unstyled">
+            <li>Integrity</li>
+            <li>Innovation</li>
+            <li>Community</li>
+            <li>Excellence</li>
+        </ul>
+
+     
+        </div>
+
+        <div style="margin-left:255px;margin-right:200px;" class="contact-info">
+            <h3>Contact Us</h3>
+            <p>If you have any questions or comments, feel free to reach out to us:</p>
+            <p>Email: contact@myblog.com</p>
+            <p>Phone: (123) 456-7890</p>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

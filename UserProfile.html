@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Font Awesome Link -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+         .navbar {
+            background-color: rgb(5, 5, 5); /* Set background color to white */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+        }
+        .navbar .navbar-brand {
+            color: rgb(154, 148, 148); /* Color for "My Blog" */
+            font-weight: bold; /* Make the brand text bold */
+        }
+        .navbar .navbar-nav .nav-link {
+            color: rgb(154,148,148); /* Set nav link color to dark */
+            text-decoration: none; /* Remove underline from links */
+        }
+        .navbar .navbar-nav .nav-link:hover {
+             /* Change color on hover */
+        }
+        body {
+            background-image: url(images/overlay.png), url(images/header.svg), linear-gradient(75deg, #FF7088 15%, #F2B69D 55%);
+            background-color: #f08c89;
+        }
+        
+.container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+/* Profile Section */
+.profile-section {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}
+
+/* Profile Picture */
+.profile-img {
+    border-radius: 50%;
+    border: 3px solid #f28e1c;
+}
+
+/* Button Styles */
+.edit-btn {
+    background-color: #f28e1c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.edit-btn:hover {
+    background-color: #d87800;
+}
+
+/* Blog Section */
+.blog-history {
+    background: rgba(240, 240, 255, 0.3);
+    backdrop-filter: blur(12px);
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.blog-history h3 {
+    color: #005f73;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.list-group-item {
+    background-color: white;
+    backdrop-filter: blur(8px);
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding: 15px;
+    border: none;
+    color: #333;
+    transition: background-color 0.3s;
+}
+
+.list-group-item:hover {
+    background-color: white;
+}
+
+/* Badge Styles */
+.badge-secondary {
+    background-color: #94d2bd;
+    color: white;
+}
+
+.bookmark-badge {
+    background-color: #ffbf69;
+    color: white;
+    font-size: 0.8rem;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+/* Share Buttons */
+.share-buttons .btn {
+    border-radius: 50%;
+    padding: 8px 10px;
+    color: white;
+}
+
+.btn-primary {
+    background-color: #1d3557;
+    border: none;
+}
+
+.btn-info {
+    background-color: black;
+    border: none;
+}
+
+.btn-secondary {
+    background-color: #e63946;
+    border: none;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+/* Bookmarked & Saved Posts Section */
+.saved-posts {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.saved-posts h3 {
+    color: #6d6875;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+a {
+    color: #005f73;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #d00000;
+}
+
+/* General Heading Styles */
+h2, h3, h5 {
+    font-weight: 700;
+    color: rgb(19, 18, 18);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+
+.text-muted {
+    color: #6c757d;
+}
+
+/* Spacing */
+.mt-4 {
+    margin-top: 1.5rem;
+    
+}
+.mt-5{
+    margin-top: 1.5rem;
+}
+</style>
+</head>
+<body>
+    <!-- Navbar -->
+     
+    <nav style="background-color: black;" class="navbar navbar-expand-lg">
+        <div class="container">
+            <a style="color:rgb(242, 235, 235);" class="navbar-brand" href="#!">My Blog</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto"> <!-- Use ml-auto to align nav items to the right -->
+                    <li class="nav-item">
+                        <a  class="nav-link" href="Home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                   
+                    <li class="nav-item">
+                        <a style="color:rgb(248, 243, 243);" class="nav-link" href="UserProfile.html">Profile</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Blog</a>
+                    </li>
+                </ul>
+                <button id="themeToggle" class="btn btn-outline-light ml-3">Light/Dark mode</button>
+            </div>
+        </div>
+    </nav>
+    
+    
+    
+    <!-- Profile Section -->
+    <div class="container mt-5">
+        <div class="row profile-section">
+            <!-- Left (More Details + Edit Profile) -->
+            <div class="col-md-8 details">
+                <h2 style="padding-bottom: 10px;">Shabnam</h2>
+                <p><strong>Occupation:</strong> Web Developer</p>
+                <p><strong>Location:</strong> Tamil Nadu,Madurai</p>
+                <p><strong>Bio:</strong> Passionate about web development, always eager to learn new technologies.</p>
+                <!-- More details added -->
+                <p><strong>Skills:</strong> HTML, CSS, JavaScript, React, Node.js</p>
+                <p><strong>Education:</strong> B.E in Computer Science Engineering from TCE</p>
+                <p><strong>Hobbies:</strong> Blogging, Reading, Singing</p>
+                <button class="btn btn-secondary edit-btn">Edit Profile</button>
+            </div>
+            <!-- Right (Profile Picture, Name & Short Description) -->
+            <div class="col-md-4 text-center" style="padding-top: 80px;">
+                <img src="Profile.jpg" alt="Profile Picture" class="profile-img img-fluid" style="height: 100px;width: auto;">
+                <h5>Shabnam</h5>
+                <p class="text-muted">Web Developer | Tech Enthusiast</p>
+            </div>
+        </div>
+      
+<!-- Blog Section -->
+<div class="row mt-4">
+    <div class="col-md-12">
+        <div class="blog-history">
+            <h3>Blogs Written</h3>
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <a href="#">A Beginner’s Guide to Mindful Meditation</a>
+                        <span class="badge badge-secondary ml-2">June 2024</span>
+                    </div>
+                    <div class="share-buttons mt-2">
+                        <a href="https://www.facebook.com/" target="_blank" class="btn btn-sm btn-primary"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://x.com/" target="_blank" class="btn btn-sm btn-info"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com/" target="_blank" class="btn btn-sm btn-secondary"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <a href="#">How AI is Transforming Everyday Life</a>
+                        <span class="badge badge-secondary ml-2">May 2024</span>
+                    </div>
+                    <div class="share-buttons mt-2">
+                        <a href="https://www.facebook.com/" target="_blank" class="btn btn-sm btn-primary"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://x.com/" target="_blank" class="btn btn-sm btn-info"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com/" target="_blank" class="btn btn-sm btn-secondary"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+        <!-- Bookmarks and Saved Section -->
+        <div id="bookmarks" class="row mt-4">
+            <div class="col-md-12">
+                <div class="saved-posts">
+                    <h3>Bookmarked & Saved Posts</h3>
+                    <ul class="list-group">
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            <a href="#">How to Build a Blog Website</a>
+                            <span class="badge bookmark-badge">Saved on July 2024</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            <a href="#">How to study smart not hard!</a>
+                            <span class="badge bookmark-badge" >Saved on June 2024</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+       <!-- Bootstrap core JS-->
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+       <!-- Core theme JS-->
+       <script src="js/scripts.js"></script>
+       <script>
+           document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+               anchor.addEventListener('click', function (e) {
+                   e.preventDefault();
+                   document.querySelector(this.getAttribute('href')).scrollIntoView({
+                       behavior: 'smooth'
+                   });
+               });
+           });
+       </script>
+      
+       <script>
+           const toggleButton = document.getElementById('themeToggle');
+           toggleButton.addEventListener('click', () => {
+               document.body.classList.toggle('bg-dark');
+               document.body.classList.toggle('text-white');
+           });
+       </script>
+      <script>
+    
+</body>
+</html>

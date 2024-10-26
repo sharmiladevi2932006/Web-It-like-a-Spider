@@ -1,0 +1,121 @@
+
+.navbar {
+    text-decoration: none; 
+    background-color: rgb(15, 14, 14); /* Set background color to white */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+}
+
+.navbar .navbar-brand {
+    text-decoration: none; 
+    color: #333; /* Color for "My Blog" */
+    font-weight: bold; /* Make the brand text bold */
+}
+
+.navbar .navbar-nav {
+    text-decoration: none; 
+    margin-left: auto; /* Push the nav items to the right */
+}
+
+.navbar .nav-link {
+    text-decoration: none; 
+    color: white; /* Set nav link color to white */
+    transition: color 0.3s; /* Smooth color transition */
+}
+
+.navbar .nav-link:hover {
+    text-decoration: none; 
+    color: #ff7088; /* Change color on hover */
+}
+.navbar-nav {
+    display: flex;
+    flex-direction: row; /* Makes sure the items are in a row */
+    margin-left:100px;/* Distributes space evenly */
+}
+
+
+.navbar-toggler {
+    text-decoration: none; 
+    border-color: rgba(255, 255, 255, 0.1); /* Optional: border color for toggler */
+}
+
+/* Responsive behavior for the toggler */
+@media (max-width: 992px) {
+    .navbar {
+        background-color: rgba(255, 255, 255, 0.95); /* Slightly transparent on mobile */
+    }
+}
+
+
+
+/* Auth Container */
+.auth-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(75deg, #FF7088 15%, #F2B69D 55%);
+    background-color: #f08c89;
+}
+
+/* Auth Box with Glassmorphism */
+.auth-box {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 40px;
+    width: 350px;
+    text-align: center;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    color: #141313;
+}
+
+.auth-box h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #1e1e1e;
+}
+
+.auth-box p {
+    margin-bottom: 30px;
+    color: #444;
+}
+
+/* Input Fields */
+.auth-box input[type="text"],
+.auth-box input[type="email"],
+.auth-box input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background: rgba(255, 255, 255, 0.5);
+    color: #333;
+    font-size: 1rem;
+    transition: box-shadow 0.3s ease;
+}
+
+.auth-box input[type="text"]:focus,
+.auth-box input[type="email"]:focus,
+.auth-box input[type="password"]:focus {
+    box-shadow: 0 0 8px rgba(255, 112, 136, 0.8);
+}
+
+/* Auth Button */
+.auth-btn {
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px;
+    border-radius: 10px;
+    border: none;
+    background-color: #333;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.auth-btn:hover {
+    background-color: #ff7088;
+}
